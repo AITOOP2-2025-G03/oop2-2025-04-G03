@@ -42,38 +42,12 @@ oop2-2025-04-GXX/
 `requirements.txt`
 * * *
 
-## セットアップ（初回のみ）
+## セットアップ
 
-```bash
-# リポジトリ取得
-git clone https://github.com/<ORG>/oop2-2025-04-GXX.git
-cd oop2-2025-04-GXX
-
-# 仮想環境（任意）
-python -m venv .venv
-# mac/Linux
-source .venv/bin/activate
-# Windows
-# .venv\Scripts\activate
-
-# 依存インストール
-pip install -r requirements.txt
-```
-
-FFmpeg が入っているか確認：
-
-```bash
-ffmpeg -version
-```
-
-* * *
 
 ## 実行手順
 
 ### 10秒録音だけ試す
-
-
-
 
 ## 出力例（保存形式）
 
