@@ -8,9 +8,9 @@ OOP2 第4回 演習
 ### 作業者１
 
 #### ファイル名
-`record_audio.py`
+`audio_recorder.py`
 #### クラス名
-`AudioRecorder  
+`AudioRecorder`
 
 ### 作業者２
 #### ファイル名
