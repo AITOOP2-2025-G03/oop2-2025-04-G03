@@ -1,25 +1,79 @@
 # oop2-2025-04-G03
 OOP2 第4回 演習
 
-リポジトリの目的，実行するのに必要なモジュール，実行手順，作成者情報など
+## 目的
 
-音声ファイルの名前　`audio-output.wav`
+10秒の音声を録音し、Whisper（MLX 版）で文字起こしして、上書きしないで保存する最小パイプラインをチーム開発で実装・共有する。
 
-### 作業者１
+* * *
 
-#### ファイル名
-`audio_recorder.py`
-#### クラス名
-`AudioRecorder`
+## リポジトリ構成
 
-### 作業者２
-#### ファイル名
-`transcribe_whisper.py`
-#### クラス名
-`WhisperTranscriber`
+```
+oop2-2025-04-GXX/
+├─ README.md
+```
 
-### 作業者３
-#### ファイル名
-`save_text.py`
-#### クラス名
-`TranscriptSaver`
+
+* * *
+
+## 実行に必要なもの
+
+### 必須ツール
+
+* **Python** 3.10 以上推奨
+    
+* **FFmpeg**（実行ファイルが PATH にあること）
+    
+    * macOS: `brew install ffmpeg`
+        
+
+### 必須Pythonパッケージ
+
+* `ffmpeg-python`（録音に使用）
+    
+* `pydub`（音声の読み込み・変換）
+    
+* `numpy`
+    
+* `mlx-whisper`（Apple Silicon で軽快に動く Whipser 実装）
+    
+
+`requirements.txt`
+* * *
+
+## セットアップ（初回のみ）
+
+```bash
+# リポジトリ取得
+git clone https://github.com/<ORG>/oop2-2025-04-GXX.git
+cd oop2-2025-04-GXX
+
+# 仮想環境（任意）
+python -m venv .venv
+# mac/Linux
+source .venv/bin/activate
+# Windows
+# .venv\Scripts\activate
+
+# 依存インストール
+pip install -r requirements.txt
+```
+
+FFmpeg が入っているか確認：
+
+```bash
+ffmpeg -version
+```
+
+* * *
+
+## 実行手順
+
+### 10秒録音だけ試す
+
+
+
+
+## 出力例（保存形式）
+
