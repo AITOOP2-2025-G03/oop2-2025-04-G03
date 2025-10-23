@@ -8,13 +8,18 @@ OOP2 第4回 演習
 ### 作業者１
 
 #### ファイル名
-`record_audio.py 　`
-
+`record_audio.py`
+#### クラス名
+`AudioRecorder  
 
 ### 作業者２
 #### ファイル名
-　`transcribe_whisper.py　`
-　
+`transcribe_whisper.py`
+#### クラス名
+`WhisperTranscriber`
+
 ### 作業者３
 #### ファイル名
-　`save_text.py`
+`save_text.py`
+#### クラス名
+`TranscriptSaver`
