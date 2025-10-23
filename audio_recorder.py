@@ -2,6 +2,7 @@
 import ffmpeg
 
 class AudioRecorder:
+    
     """FFmpegで音声を録音してWAV保存する超シンプルなクラス。"""
     def __init__(self, backend='avfoundation', input_spec=':0', samplerate=16000, channels=1):
         self.backend = backend        # mac: 'avfoundation', Win: 'dshow', Linux: 'pulse'/'alsa'
@@ -24,7 +25,7 @@ class AudioRecorder:
             print(f"エラーが発生しました: {e.stderr.decode(errors='ignore')}")
         except Exception as e:
             print(f"予期せぬエラー: {e}")
-            
+
 if __name__ == "__main__":
     # macの例（:0）。必要に応じて backend / input_spec を変えるだけ。
     AudioRecorder(backend='avfoundation', input_spec=':0').record()
