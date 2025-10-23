@@ -5,11 +5,16 @@ OOP2 第4回 演習
 
 音声ファイルの名前　`audio-output.wav`
 
-作業者１
-record_audio.py 
+### 作業者１
 
-作業者２
-transcribe_whisper.py
+#### ファイル名
+`record_audio.py 　`
 
-作業者３
-save_text.py
+
+### 作業者２
+#### ファイル名
+　`transcribe_whisper.py　`
+　
+### 作業者３
+#### ファイル名
+　`save_text.py`
