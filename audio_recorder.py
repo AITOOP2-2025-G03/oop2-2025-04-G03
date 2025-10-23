@@ -24,7 +24,7 @@ class AudioRecorder:
             print(f"エラーが発生しました: {e.stderr.decode(errors='ignore')}")
         except Exception as e:
             print(f"予期せぬエラー: {e}")
-
+            
 if __name__ == "__main__":
     # macの例（:0）。必要に応じて backend / input_spec を変えるだけ。
     AudioRecorder(backend='avfoundation', input_spec=':0').record()
